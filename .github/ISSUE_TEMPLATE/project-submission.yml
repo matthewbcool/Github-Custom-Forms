@@ -1,0 +1,128 @@
+name: Project Submission
+description: Submit your project for review
+title: "[Project Submission]: "
+labels: ["project-submission", "needs-review"]
+assignees:
+  - matthewbcool
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit Your Project
+        Thank you for submitting your project! Please fill out the information below.
+        
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description: What is the name of your project?
+      placeholder: "e.g., My Awesome App"
+    validations:
+      required: true
+      
+  - type: input
+    id: team-name
+    attributes:
+      label: Team Name
+      description: What is your team name?
+      placeholder: "e.g., The Innovators"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: team-members
+    attributes:
+      label: Team Members
+      description: List all team members and their GitHub usernames
+      placeholder: |
+        - John Doe (@johndoe)
+        - Jane Smith (@janesmith)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: Provide a detailed description of your project
+      placeholder: Tell us what your project does and what problem it solves
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Project Category
+      description: Select the category that best fits your project
+      options:
+        - Web Development
+        - Mobile App
+        - AI/Machine Learning
+        - DevOps/Infrastructure
+        - Gaming
+        - IoT/Hardware
+        - Other
+    validations:
+      required: true
+      
+  - type: input
+    id: repository-url
+    attributes:
+      label: Repository URL
+      description: Link to your project's GitHub repository
+      placeholder: "https://github.com/username/project"
+    validations:
+      required: true
+      
+  - type: input
+    id: demo-url
+    attributes:
+      label: Demo URL
+      description: Link to a live demo or video demonstration (if available)
+      placeholder: "https://your-demo.com"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: tech-stack
+    attributes:
+      label: Technologies Used
+      description: List the main technologies, frameworks, and tools used
+      placeholder: |
+        - React
+        - Node.js
+        - PostgreSQL
+        - Docker
+    validations:
+      required: true
+      
+  - type: textarea
+    id: challenges
+    attributes:
+      label: Challenges Faced
+      description: What challenges did you encounter and how did you overcome them?
+      placeholder: Describe the main challenges and your solutions
+    validations:
+      required: false
+      
+  - type: textarea
+    id: future-plans
+    attributes:
+      label: Future Plans
+      description: What are your plans for this project going forward?
+      placeholder: Describe any future features or improvements you plan to implement
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Agreement
+      description: Please confirm the following
+      options:
+        - label: I confirm that this is my team's original work
+          required: true
+        - label: I agree to make the source code publicly available
+          required: true
+        - label: I have read and agree to the submission guidelines
+          required: true

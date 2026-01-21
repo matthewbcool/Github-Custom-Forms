@@ -1,0 +1,180 @@
+labels: ["hackathon-signup"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎉 Hackathon Sign-Up
+        
+        Welcome to our hackathon! Please fill out this form to register your participation.
+        
+        After submitting, you'll receive more details about the event schedule and rules.
+        
+  - type: input
+    id: full-name
+    attributes:
+      label: Full Name
+      description: Your full name
+      placeholder: "e.g., John Doe"
+    validations:
+      required: true
+      
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: Your email address for event communications
+      placeholder: "you@example.com"
+    validations:
+      required: true
+      
+  - type: input
+    id: github-username
+    attributes:
+      label: GitHub Username
+      description: Your GitHub username
+      placeholder: "@username"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: experience-level
+    attributes:
+      label: Experience Level
+      description: What's your coding experience level?
+      options:
+        - Beginner (0-1 years)
+        - Intermediate (1-3 years)
+        - Advanced (3-5 years)
+        - Expert (5+ years)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: participation-type
+    attributes:
+      label: Participation Type
+      description: How would you like to participate?
+      options:
+        - Solo (Individual)
+        - Looking for a Team
+        - Already Have a Team
+    validations:
+      required: true
+      
+  - type: input
+    id: team-name
+    attributes:
+      label: Team Name (if applicable)
+      description: If you already have a team, what's your team name?
+      placeholder: "e.g., The Code Crushers"
+    validations:
+      required: false
+      
+  - type: textarea
+    id: team-members
+    attributes:
+      label: Team Members (if applicable)
+      description: List your team members and their GitHub usernames
+      placeholder: |
+        - Jane Smith (@janesmith)
+        - Bob Johnson (@bobjohnson)
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: interests
+    attributes:
+      label: Areas of Interest
+      description: What areas are you interested in working on? (Select all that apply)
+      options:
+        - label: Web Development
+          required: false
+        - label: Mobile Development
+          required: false
+        - label: AI/Machine Learning
+          required: false
+        - label: DevOps/Cloud
+          required: false
+        - label: Game Development
+          required: false
+        - label: Data Science
+          required: false
+        - label: Cybersecurity
+          required: false
+        - label: IoT/Hardware
+          required: false
+          
+  - type: textarea
+    id: programming-languages
+    attributes:
+      label: Programming Languages
+      description: Which programming languages are you comfortable with?
+      placeholder: |
+        - Python
+        - JavaScript
+        - Java
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: tshirt-size
+    attributes:
+      label: T-Shirt Size
+      description: Select your t-shirt size for event swag
+      options:
+        - XS
+        - S
+        - M
+        - L
+        - XL
+        - XXL
+    validations:
+      required: true
+      
+  - type: textarea
+    id: dietary-restrictions
+    attributes:
+      label: Dietary Restrictions
+      description: Do you have any dietary restrictions or allergies?
+      placeholder: "e.g., Vegetarian, Vegan, Gluten-free, Nut allergy"
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: workshops
+    attributes:
+      label: Workshop Interests
+      description: Which workshops would you like to attend? (Optional)
+      options:
+        - label: Introduction to Git & GitHub
+          required: false
+        - label: API Development Best Practices
+          required: false
+        - label: Building with AI/ML
+          required: false
+        - label: Cloud Deployment Strategies
+          required: false
+        - label: Mobile App Development
+          required: false
+          
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions or Comments
+      description: Do you have any questions or special requirements?
+      placeholder: Let us know if you need any accommodations or have questions about the event
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: agreements
+    attributes:
+      label: Agreements
+      description: Please confirm the following
+      options:
+        - label: I agree to follow the hackathon Code of Conduct
+          required: true
+        - label: I agree to the event's photo/video policy
+          required: true
+        - label: I understand that I need to check in on the day of the event
+          required: true
