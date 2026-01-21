@@ -1,0 +1,47 @@
+title: "👋 Hello from "
+labels: ["introduction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! We'd love to get to know you better. Say hello and share a fun fact about yourself!
+  
+  - type: input
+    id: name
+    attributes:
+      label: Your Name
+      description: What should we call you?
+      placeholder: ex. Jane Doe
+    validations:
+      required: true
+  
+  - type: textarea
+    id: introduction
+    attributes:
+      label: Say Hello!
+      description: Introduce yourself to the community
+      placeholder: Tell us a bit about yourself...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: fun-fact
+    attributes:
+      label: Fun Fact
+      description: Share something interesting about yourself!
+      placeholder: I once climbed Mount Everest... or I can juggle... or I speak 5 languages...
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: how-found
+    attributes:
+      label: How did you find us?
+      description: We'd love to know how you discovered this community
+      options:
+        - GitHub search
+        - Friend recommendation
+        - Social media
+        - Other
+    validations:
+      required: false
