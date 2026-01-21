@@ -1,0 +1,52 @@
+title: "[Hackathon Submission] "
+labels: ["hackathon"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting your hackathon project! Please fill out the information below.
+  
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description: What's the name of your project?
+      placeholder: ex. Awesome App
+    validations:
+      required: true
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: Tell us about your project and what it does
+      placeholder: Describe your project...
+    validations:
+      required: true
+  
+  - type: input
+    id: team-members
+    attributes:
+      label: Team Members
+      description: List the GitHub usernames of your team members (comma-separated)
+      placeholder: "@user1, @user2, @user3"
+    validations:
+      required: false
+  
+  - type: input
+    id: demo-url
+    attributes:
+      label: Demo URL
+      description: Link to your project demo or repository
+      placeholder: https://github.com/username/project
+    validations:
+      required: false
+  
+  - type: textarea
+    id: technologies
+    attributes:
+      label: Technologies Used
+      description: What technologies, frameworks, or tools did you use?
+      placeholder: React, Node.js, Python, etc.
+    validations:
+      required: false
